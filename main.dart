@@ -1,4 +1,4 @@
-import 'package:dooadex_palette/color/dooadex_color.dart';
+import 'package:dooadex_palette/dooadex_palette.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,11 +10,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    DooadexColor.toMaterialColor(ColorSequence.primary);
     return MaterialApp(
       title: 'Dooadex Package Test App',
       theme: ThemeData(
-        primarySwatch: MaterialColor(DooadexColor.materialColor.colorHex, DooadexColor.materialColor.swatch),
+        primarySwatch:
+            MaterialColor(DooadexColor.primaryMaterialColor.colorHex, DooadexColor.primaryMaterialColor.swatch),
       ),
       home: const MyHomePage(title: 'Dooadex Home Page'),
     );

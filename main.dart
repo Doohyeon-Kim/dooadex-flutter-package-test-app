@@ -14,8 +14,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Dooadex Package Test App',
       theme: ThemeData(
-        primarySwatch:
-            MaterialColor(DooadexColor.primaryMaterialColor.colorHex, DooadexColor.primaryMaterialColor.swatch),
+        primarySwatch: MaterialColor(DdxColor.primaryMaterialColor.colorHex,
+            DdxColor.primaryMaterialColor.swatch),
       ),
       home: const MyHomePage(title: 'Dooadex Home Page'),
     );
@@ -38,11 +38,10 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {},
-          child: const Text("Test"),
-        ),
-      ),
+        child: Column(
+          children: [
+         ],
+       ),
     );
   }
 }
